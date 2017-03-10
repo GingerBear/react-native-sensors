@@ -30,10 +30,10 @@ public class Accelerometer extends ReactContextBaseJavaModule implements SensorE
     this.sensorManager = (SensorManager)reactContext.getSystemService(reactContext.SENSOR_SERVICE);
     this.sensor = this.sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
 
-    if (this.sensor == null) {
-      // No sensor found, throw error
-      throw new RuntimeException("No Accelerometer found");
-    }
+    // if (this.sensor == null) {
+    //   // No sensor found, throw error
+    //   throw new RuntimeException("No Accelerometer found");
+    // }
   }
 
   // RN Methods
